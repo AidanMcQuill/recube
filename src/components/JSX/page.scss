@@ -1,6 +1,4 @@
-*{
-    max-width: 100%;
-}
+
 
 body {
     font-family: Chicago, Verdana, sans-serif;
@@ -18,7 +16,7 @@ body {
 }
 
 // === ABOUT ME ===
-.AboutRules{
+.AboutRules {
     margin: 30px, 30px;
     padding: 30px;
     text-align: center;
@@ -28,53 +26,50 @@ body {
     max-width: 100%;
     position: relative;
     align-items: center;
-    
-  }
-  
-  .img-size {
+}
+
+.img-size {
     max-width: 320px;
     border-radius: 10px;
-  }
-  
-  .img-shadow {
+}
+
+.img-shadow {
     box-shadow: 5px 5px 5px rgba(118, 215, 235, 0.3);
-      position: relative;
-      margin: auto;
-  }
-  
-  
-  .about .content h3 {
+    position: relative;
+    margin: auto;
+}
+
+.about .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #66FCF1;
-  }
-  
-  .about .content ul {
+    color: #66fcf1;
+}
+
+.about .content ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .about .content ul li {
+}
+
+.about .content ul li {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-  }
-  
-  .about .content ul strong {
+}
+
+.about .content ul strong {
     margin-right: 7px;
-  }
-  
-  .about .content ul i {
+}
+
+.about .content ul i {
     font-size: 16px;
     margin-right: 10px;
-    color: #45A29E;
+    color: #45a29e;
     line-height: 0;
-  }
-  
-  .about .content p:last-child {
+}
+
+.about .content p:last-child {
     margin-bottom: 30px;
-  }
-  
+}
 
 .container {
     padding-top: 20px;
@@ -183,10 +178,8 @@ body {
     padding: 0;
 
     .cards_item {
-
         display: flex;
         padding: 1.5rem;
-       
     }
 
     @media only screen and (min-width: 600px) {
@@ -216,41 +209,41 @@ body {
     // align-items: center;
 
     .card0 {
-      max-width: 100%;
-      margin: 10px 10px 10px 10px ;
-      background-color: #b9b9b9;
-      text-align: center;
+        max-width: 100%;
+        margin: 10px 10px 10px 10px;
+        background-color: #b9b9b9;
+        text-align: center;
 
-      p{
-        // border: solid 3px black;
-        padding: 10px;
-        margin-top: 5px;
-        max-width: 75%;
-      }
+        p {
+            // border: solid 3px black;
+            padding: 10px;
+            margin-top: 5px;
+            max-width: 75%;
+        }
     }
     // }
-        // }
-        // .card1{
-        //     grid-row: 3/ 4;
-        //     grid-column: 2/ 4;
-        // }
-        // .card2{
-        //     grid-row: 3/ 4;
-        //     grid-column: 5 /6;
-        // }
-        // .card3{
-        //     grid-row: 3/ 4;
-        //     grid-column: 7/ 9;
-        //
+    // }
+    // .card1{
+    //     grid-row: 3/ 4;
+    //     grid-column: 2/ 4;
+    // }
+    // .card2{
+    //     grid-row: 3/ 4;
+    //     grid-column: 5 /6;
+    // }
+    // .card3{
+    //     grid-row: 3/ 4;
+    //     grid-column: 7/ 9;
+    //
     // }
 }
-.cards{ //DIV
+.cards {
+    //DIV
     display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .Cards {
@@ -259,7 +252,6 @@ body {
     overflow: hidden;
     align-items: center;
     padding-bottom: 15px;
-   
 
     h2 {
         font-weight: 700;
@@ -273,7 +265,7 @@ body {
         width: 50%;
         cursor: pointer;
     }
-    button:hover{
+    button:hover {
         background-color: #000;
         color: #eee;
     }
@@ -283,20 +275,120 @@ body {
         vertical-align: middle;
         border: solid 3px #000000;
     }
-    h3{
+    h3 {
         padding: 5px;
-        margin-top:15px;
+        margin-top: 15px;
     }
 }
 
-// RESUME 
+// RESUME
 
-.resume{
-    max-width: 1300px;
+.resume {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
+}
+.heading {
+    text-align: center;
+    h1 {
+        font-weight: bold;
+    }
+    h2 {
+        font-size: medium;
+    }
+    h3 {
+        font-size: small;
+    }
+}
+
+.skillList ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillList li {
+    flex: 50%; /* Set to 50% to create two columns */
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tech {
+    text-align: left;
+    padding-left: 20px;
+    h2 {
+        font-weight: 500;
+        font-size: x-large;
+    }
+    ul {
+        list-style-type: none;
+        padding: 3px;
+    }
+    span {
+        font-weight: bold;
+    }
+    li {
+        padding: 5px;
+    }
+}
+
+.projects {
+    text-align: left;
+    padding-left: 20px;
+    h2 {
+        font-weight: 500;
+        font-size: x-large;
+    }
+    ul {
+        align-items: center;
+    }
+    li {
+        padding: 5px;
+    }
+    span {
+        font-weight: bold;
+    }
+}
+
+.training {
+    .mini{
+        font-weight: bold;
+    }
+    text-align: left;
+    padding-left: 20px;
+    h2 {
+        font-weight: 500;
+        font-size: x-large;
+    }
+    h3 {
+        font-size: medium;
+    }
+    span {
+        font-size: medium;
+        float: right;
+    }
+    ul {
+        text-align: left;
+        margin-top: 15px;
+        max-width: 60%;
+        list-style-type: circle;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    li {
+        flex: 50%; /* Set to 50% to create two columns */
+        padding: 5px;
+        text-align: left;
+        font-weight: 700;
+        
+    }
 }
