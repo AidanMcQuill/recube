@@ -9,13 +9,14 @@ import Resume from './components/JSX/Resume'
 import Portfolio from './components/JSX/Portfolio'
 import Contact from './components/JSX/Contact'
 import Connections from './components/JSX/Connections'
+import Cards from './components/JSX/Cards'
+ 
+ 
+ 
 
 function App() {
     return (
         <Router>
-            <switch>
-                
-            </switch>
             <Routes>
                 <Route path="/" element={<MainPage/>} />
                 <Route path='/about' element={<AboutMe/>} />

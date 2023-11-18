@@ -1,13 +1,69 @@
 import React from 'react'
+import Layout from './Layout'
+import HeroShot from '../../assets/HeroShot.jpg'
+
+import './page.scss'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export default function AboutMe() {
-  return (
-    <div>
-        <h1>Tester For About</h1>
+    return (
+        <>
+            <Layout />
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, harum ratione. Soluta optio, eos sed ipsa a id, dignissimos quaerat, cum sapiente quidem laborum. Numquam vel nesciunt officia odit mollitia!
-    Sit asperiores delectus, numquam possimus tenetur cupiditate expedita debitis omnis, quis tempore in officiis non, amet earum totam nulla laudantium consectetur ex illum eius deleniti nobis illo molestiae voluptates. Expedita!
-    Corporis deserunt accusantium recusandae iure aut ipsa delectus maiores saepe vero nisi ex dignissimos dolores voluptates veniam, doloremque aliquid, omnis laborum, est minus impedit sequi eos consectetur eaque. Dolores, laudantium.</p>
-    </div>
-  )
+            <Container className='container'>
+                {/* Shared Layout Component */}
+
+                {/* Section 1  */}
+                <div className='Border item1'>
+                    <h2>About Me</h2>
+                    <p>
+                        I specalize in web development and programming. From captivating websites to a myriad of software applications, my
+                        skills in HTML, CSS, JavaScript, and C# know no bounds. Innovative and dynamic, I aim at turning every project into
+                        a resounding success.
+                    </p>
+                </div>
+
+                {/* Section 2 */}
+                <div className='Border item2'>
+                    {/* <h3>Web Developer &amp; Programmer</h3> */}
+                    <img src={HeroShot} class='HeroShot' alt=''></img>
+                </div>
+
+                {/* Section 3 */}
+                <div className='Border item3'>
+                    <p class='fst-italic'>
+                        - I'm proficient in HTML, CSS, JavaScript, and C#. I create captivating websites and innovative software
+                        applications. -
+                    </p>
+                   
+                    <p>
+                        As a skilled web developer and programmer proficient in HTML, CSS, JavaScript, and C#, I bring a range of expertise
+                        in crafting captivating websites and innovative software applications. Eager to contribute my talents and
+                        collaborate with a team, I'm dedicated to delivering exceptional solutions that make a meaningful impact on
+                        everyone.
+                    </p>
+                </div>
+
+                {/* Section 4 */}
+                <div className=' Border item4'>
+                <ul>
+                        <li>
+                            <i class='bi bi-chevron-right'></i> <strong>Website:</strong>{' '}
+                            <a href='http://www.aidanmcquillan.com/'>
+                                <p2>aidanmcquillan.com</p2>
+                            </a>
+                        </li>
+                        <li>
+                            <i class='bi bi-chevron-right'></i> <strong>City:</strong> <span>Clarkston, Michigan</span>
+                        </li>
+                        <li>
+                            <i class='bi bi-chevron-right'></i> <strong>Email:</strong> <span>AidanMcQuillan917@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </Container>
+        </>
+    )
 }

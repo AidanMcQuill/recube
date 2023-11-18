@@ -8,9 +8,11 @@ import Demo from './JSX/Demo'
 const MainPage = () => {
   return (
     <>
+    {/* <div style={{overflow: "hidden"}}>  */}
       {/* UI */}
       <Main3D/>
       <Demo/>
+    {/* </div> */}
     </>
   );
 }

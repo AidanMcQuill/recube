@@ -1,12 +1,11 @@
 #root {
     width: 100vw;
     height: 100vh;
-    background-repeat: no-repeat;
     /* Gradient Animation  */
     background-image: var(--gradient);
     background-size: 600%;
-    animation: bg-animation 7s infinite alternate;
-    overflow: hidden;
+    animation: bg-animation 30s infinite alternate;
+    
     }
   
     @keyframes bg-animation {
@@ -18,12 +17,12 @@
     :root {
       --gradient: linear-gradient(
         45deg,
-        #535353,
-        #606060,
-        #747373,
-        #888888,
         #a7a7a7,
-        #bcbcbc
+        #d5d5d5,
+        #d7d7d7,
+        #d5d5d5,
+        #a7a7a7,
+        #d5d5d5
         /* #00a388,
         #63A69F,
         #F2E1AC,
@@ -33,3 +32,23 @@
       );
   }
   
+  @font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./assets/Pixel_NES.otf) format('woff');
+  }
+
+  .ArtCard{
+    font-family: Chicago, Verdana, sans-serif;
+    font-weight: bold;
+    
+  }
+  span{
+    font-family: Chicago, Verdana, sans-serif;  
+    font-weight: 500;
+  }
+
+  .tiny{
+    font-size: smaller;
+    font-weight: bolder;
+    
+  }

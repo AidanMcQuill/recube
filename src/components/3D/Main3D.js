@@ -17,7 +17,7 @@ export default function Main3D() {
         <Canvas>
             {/* <Suspense fallback={null} /> */}
             <ambientLight intensity={1} />
-            <directionalLight position={[3, 3, 90]} intensity={1} />
+            <directionalLight position={[-50, -5, 90]} intensity={1} />
             <hemisphereLight intensity={1} />
             {/* Animation */}
             <OrbitControls
