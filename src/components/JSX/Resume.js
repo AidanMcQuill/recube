@@ -8,7 +8,7 @@ export default function Resume() {
             <Layout />
             <Container className='resume'>
                 {/* RESUME */}
-                <div className='main'>
+                <div>
                     {/* HEADER */}
                     <div className='heading'>
                         <h1>Aidan McQuillan</h1>

@@ -1,11 +1,7 @@
+
 #root {
-  width: 100%;
-  height: 100%;
-  background-color: aqua;
-}
-/* #root { */
-    /* width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-Position: center;
     background-Size: cover;
     background-image: var(--gradient);
@@ -28,15 +24,15 @@
         #e5e5e5,
         #b5b5b5,
         #e0e0e0,
-        #b5b5b5 */
+        #b5b5b5
         /* #00a388,
         #63A69F,
         #F2E1AC,
         #F2836B,
         #F2594B,
         #CD2C24 */
-      /* );
-  } */
+      );
+  }
   
   @font-face {
     font-family: 'MyFont';
@@ -57,9 +53,4 @@
     font-size: smaller;
     font-weight: bolder;
     
-  }
-
-  .mainPage{
-    min-height: 100vh;
-    min-width: 100dvw;
   }

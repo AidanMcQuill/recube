@@ -4,64 +4,67 @@ import HeroShot from '../../assets/HeroShot.jpg'
 
 import './page.scss'
 import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 export default function AboutMe() {
     return (
         <>
             <Layout />
+            <Container className='about'>
+                <div>
+                    {/* Shared Layout Component */}
 
-            <Container className='container'>
-                {/* Shared Layout Component */}
+                    {/* Heading*/}
+                    <div className='header'>
+                        <h2 className='Border'><i>About Me</i></h2>
+                        <p className='Border'>
+                            I specalize in web development and programming. From captivating websites to a myriad of software applications,
+                            my skills in HTML, CSS, JavaScript, and C# know no bounds. Innovative and dynamic, I aim at turning every
+                            project into a resounding success.
+                        </p>
+                    </div>
 
-                {/* Section 1  */}
-                <div className='Border item1'>
-                    <h2>About Me</h2>
-                    <p>
-                        I specalize in web development and programming. From captivating websites to a myriad of software applications, my
-                        skills in HTML, CSS, JavaScript, and C# know no bounds. Innovative and dynamic, I aim at turning every project into
-                        a resounding success.
-                    </p>
-                </div>
-
-                {/* Section 2 */}
-                <div className='Border item2'>
-                    {/* <h3>Web Developer &amp; Programmer</h3> */}
-                    <img src={HeroShot} class='HeroShot' alt=''></img>
-                </div>
-
-                {/* Section 3 */}
-                <div className='Border item3'>
-                    <p class='fst-italic'>
-                        - I'm proficient in HTML, CSS, JavaScript, and C#. I create captivating websites and innovative software
-                        applications. -
-                    </p>
-                   
-                    <p>
-                        As a skilled web developer and programmer proficient in HTML, CSS, JavaScript, and C#, I bring a range of expertise
-                        in crafting captivating websites and innovative software applications. Eager to contribute my talents and
-                        collaborate with a team, I'm dedicated to delivering exceptional solutions that make a meaningful impact on
-                        everyone.
-                    </p>
-                </div>
-
-                {/* Section 4 */}
-                <div className=' Border item4'>
-                <ul>
-                        <li>
-                            <i class='bi bi-chevron-right'></i> <strong>Website:</strong>{' '}
-                            <a href='http://www.aidanmcquillan.com/'>
-                                <p2>aidanmcquillan.com</p2>
-                            </a>
-                        </li>
-                        <li>
-                            <i class='bi bi-chevron-right'></i> <strong>City:</strong> <span>Clarkston, Michigan</span>
-                        </li>
-                        <li>
-                            <i class='bi bi-chevron-right'></i> <strong>Email:</strong> <span>AidanMcQuillan917@gmail.com</span>
-                        </li>
-                    </ul>
+                    {/* Main Section */}
+                    <div class='row pt-5 con'>
+                        <div class='col-lg-4'>
+                            <img src={HeroShot} class='img-fluid img-size img-shadow Border' alt='' />
+                        </div>
+                        <div class='col-lg-8 pt-4 pt-lg-0 content'>
+                            <h3><i>Web Developer &amp; Programmer</i></h3>
+                            <br />
+                            <p class='fst-italic'>
+                                - I'm proficient in HTML, CSS, JavaScript, and C#. I create captivating websites and innovative software
+                                applications. -
+                            </p>
+                            <br />
+                            <hr />
+                            <div class='row'>
+                                <div class='col-lg-6'>
+                                    <ul>
+                                        <li>
+                                            <i class='bi bi-chevron-right'></i> <strong>Website:</strong>{' '}
+                                            <a href='http://www.aidanmcquillan.com/'>
+                                                <p2>aidanmcquillan.com</p2>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class='bi bi-chevron-right'></i> <strong>City:</strong> <span>Clarkston, Michigan</span>
+                                        </li>
+                                        <li>
+                                            <i class='bi bi-chevron-right'></i> <strong>Email:</strong>{' '}
+                                            <span>AidanMcQuillan917@gmail.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <p>
+                                As a skilled web developer and programmer proficient in HTML, CSS, JavaScript, and C#, I bring a range of
+                                expertise in crafting captivating websites and innovative software applications. Eager to contribute my
+                                talents and collaborate with a team, I'm dedicated to delivering exceptional solutions that make a
+                                meaningful impact on everyone.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </Container>
         </>
