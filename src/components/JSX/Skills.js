@@ -2,65 +2,72 @@ import React from 'react'
 import Layout from './Layout'
 import Container from 'react-bootstrap/Container'
 import './page.scss'
+import { IconContext } from 'react-icons'
+
+// LOGOS
+import { DiBootstrap } from 'react-icons/di'
 
 export default function Skills() {
     return (
         <>
             <Layout />
-            <Container className='container skills'>
+            <Container className='skills'>
                 {/* Section 1 */}
-                <div class='Border skill-tab'>
-                    <h2>Skills</h2>
-                    <p>
-                        I possess a diverse skill set that allows me to excel in web development and software programming. My wide range of
-                        abilities enables me to create dynamic websites, user-friendly applications, and contribute effectively to various
-                        projects.
+                <div className='header row'>
+                    <h2 className='Border'>
+                        <i>Skills</i>
+                    </h2>
+                    <p className='Border p-3'>
+                        <span className='intro'>
+                            I'm a Full Stack Developer with a robust skill set honed through immersive experiences. Let's dive into the core
+                            of what I bring to the table:
+                        </span>
+                        <hr />
+                        <br /> <span>Front End Mastery:</span> I specialize in crafting captivating user interfaces using HTML5, JavaScript,
+                        jQuery, jQueryUI, CSS3, and responsive/mobile web development techniques. Bootstrap and ReactJS are my go-to tools
+                        for ensuring seamless and engaging front-end experiences.
+                        <br />
+                        <hr /> <span>Middle Tier Expertise:</span> In the middle tier, I excel in using C#, .NET Core MVC, LINQ, EF, and
+                        Razor Pages. This enables me to build dynamic web applications that seamlessly bridge the gap between user
+                        interaction and back-end functionality. <br /> <br />
+                        <hr />
+                        <span>Back End Command:</span> My proficiency extends to the back end, where I manage databases with SQL and SQL
+                        Server. I leverage Axios and work seamlessly with tools like Azure Data Studio, Visual Studio, Visual Studio Code,
+                        SSMS, and Git Bash to ensure a smooth and efficient development process.
                     </p>
                 </div>
 
                 {/* Section 2 */}
-                {/* HTML */}
-                <div className='Border skill1'>
-                    <h1 className='pb-2'>React</h1>
-                    <p className='Border m-1'>React frontend</p>
-                </div>
-                {/* CSS */}
-                <div className='Border skill2'>
-                    <h1 className='pb-2'>CSS</h1>
-                    <p className='Border m-1'>Clean Styles</p>
-                </div>
-                {/* JS */}
-                <div className='Border skill3'>
-                    <h1 className='pb-2'>JavaScript</h1>
-                    <p className='Border m-1'>Adaptable JavaScript </p>
-                </div>
-                <div className='Border skill4'>
-                    <h1 className='pb-2'>C#</h1>
-                    <p className='Border m-1'>Backend C#</p>
-                </div>
-                <div className='Border skill5'>
-                    <h1 className='pb-2'>SQL</h1>
-                    <p className='Border m-1'>SQL Databases</p>
-                </div>
-                <div className='Border skill6'>
-                    <h1 className='pb-2'>Adobe</h1>
-                    <p className='Border m-1'>Adobe Creative Softwares</p>
-                </div>
-
-                <div class='Border service-tab'>
-                    <h2>Services</h2>
-                </div>
-                <div className='Border service1'>
-                    <h1 className='pb-2'>Front-End</h1>
-                    <p className='Border m-1'>Clean,slick, and stylish UI/UX for users</p>
-                </div>
-                <div className='Border service2'>
-                    <h1 className='pb-2'>Back-End</h1>
-                    <p className='Border m-1'>I make sure the gears will turn</p>
-                </div>
-                <div className='Border service3'>
-                    <h1 className='pb-2'>Adobe</h1>
-                    <p className='Border m-1'>Creative software bringing Ideas to life</p>
+                <div className='rows'>
+                    {/* Front-End */}
+                    <div className='row'>
+                        <h1>Front End</h1>
+                        <h4 className='Border'>HTML5</h4>
+                        <h4 className='Border'>JavaScript</h4>
+                        <h4 className='Border'>jQuery</h4>
+                        <h4 className='Border'>CSS3</h4>
+                        <h4 className='Border'>Mobile</h4>
+                        <h4 className='Border'>ReactJS</h4>
+                        <h4 className='Border'><a href="https://getbootstrap.com/" target='_blank' rel="noreferrer">Bootstrap<DiBootstrap/></a></h4>
+                    </div>
+                    {/* Back-End */}
+                    <div className='row'>
+                        <h1>Back End</h1>
+                        <h4 className='Border'>HTML5</h4>
+                        <h4 className='Border'>JavaScript</h4>
+                        <h4 className='Border'>jQuery</h4>
+                        <h4 className='Border'>CSS3</h4>
+                        <h4 className='Border'>Mobile</h4>
+                    </div>
+                    {/* Tools */}
+                    <div className='row'>
+                        <h1>Creative Tools</h1>
+                        <h4 className='Border'>HTML5</h4>
+                        <h4 className='Border'>JavaScript</h4>
+                        <h4 className='Border'>jQuery</h4>
+                        <h4 className='Border'>CSS3</h4>
+                        <h4 className='Border'>Mobile</h4>
+                    </div>
                 </div>
             </Container>
         </>

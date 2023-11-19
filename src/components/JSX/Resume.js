@@ -92,6 +92,10 @@ export default function Resume() {
                             <li>Agile Scrum Methodology</li>
                         </ul>              
                     </div>
+                    <hr />
+                    <div className='download'>
+                    <a href="~/assets/img/AidanMcQuillanResume(8-18-23).pdf" target="_blank">Download It Here!</a>
+                    </div>
                 </div>
             </Container>
         </>
