@@ -7,6 +7,7 @@
     background-image: var(--gradient);
     background-size: 600%;
     animation: bg-animation 10s infinite alternate;
+     font-family: Chicago;
     
     }
   
@@ -37,6 +38,10 @@
   @font-face {
     font-family: 'MyFont';
     src: local('MyFont'), url(./assets/Pixel_NES.otf) format('woff');
+  }
+  @font-face {
+    font-family: 'Chicago';
+    src: local('Chicago'), url(./assets/ChicagoFLF.ttf) format('woff');
   }
 
   .ArtCard{

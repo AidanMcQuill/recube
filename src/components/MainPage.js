@@ -3,6 +3,8 @@
 import React from 'react';
 import Main3D from './3D/Main3D';
 import Demo from './JSX/Demo'
+import {motion} from 'framer-motion'
+
 
 
 

@@ -1,20 +1,58 @@
 import React from 'react'
 import Layout from './Layout'
+import Container from 'react-bootstrap/Container'
+// Images
+import Alicia from '../../assets/classmates/AliciaVillegas.jpg'
+import Chanel from '../../assets/classmates/ChanelDubreuil.jpg'
+import Chris from '../../assets/classmates/ChrisRandall.jpg'
+import Gene from '../../assets/classmates/GeneCathcart.jpg'
+import Paul from '../../assets/classmates/PaulValenti.JPG'
+import Zoey from '../../assets/classmates/ZoeyBateman.jpeg'
+import NoImage from '../../assets/classmates/NoImage.jpg'
 
 export default function Connections() {
     return (
         <>
             <Layout />
-            <div>
-                {/* Section 1 */}
-                <div class='Border Cards card0'>
-                    <h2></h2>
-                    <p className='Border'>
-                        I create dynamic and interactive portfolio items for programming and software development, combining design,
-                        functionality, and coding prowess to showcase my skills effectively.
-                    </p>
+            <Container className='connections'>
+                <div className='conn'>
+                    {/* Heading  */}
+                    <h2>Connections</h2>
+                    <div class='Border connect'>
+                        <p>
+                            This digital hub is a central meeting point for connecting with my fellow Centriq classmates. Serving as a
+                            portal to personal websites, it offers a straightforward way to explore each developer's unique skills and
+                            projects. Join me in navigating this network, discovering the diverse talents within our community.
+                        </p>
+                    </div>
+                        <h3>Centriq's Full Stack Coding Program</h3>
+                    {/* Main */}
+                    <div className='connect pt-3'>
+                        {/* Section 2 */}
+
+                        <li className='cards_item'>
+                            <div className='Border cons '>
+                                <img src={NoImage} alt='BlockBeasts' />
+                                <a href="aliciavillegas.net "className="Border">Alex Davenport</a>
+                            </div>
+                        </li>
+                        <li className='cards_item'>
+                            <div className='Border cons '>
+                                <img src={Alicia} alt='BlockBeasts' />
+                                <a href="aliciavillegas.net "className="Border">Alicia Villegas</a>
+                            </div>
+                        </li>
+
+                        <li className='cards_item'>
+                            <div className='Border cons card2'>
+                                <img src={Chanel} alt='ToDo' />
+                                <a href="aliciavillegas.net "className="Border">Alicia Villegas</a>
+                            </div>
+                        </li>
+
+                    </div>
                 </div>
-            </div>
+            </Container>
         </>
     )
 }

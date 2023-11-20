@@ -4,13 +4,21 @@ import HeroShot from '../../assets/HeroShot.jpg'
 
 import './page.scss'
 import Container from 'react-bootstrap/Container'
+import { motion } from 'framer-motion'
 
 export default function AboutMe() {
     return (
         <>
+            <div className='aboutPop'>
+                <h4>About Me</h4>
+            </div>
             <Layout />
             <Container className='about'>
-                <div>
+                <motion.div
+                    initial={{ opacity: 0,}}
+                    animate={{ opacity: 1, transition: { duration: 3 }}}
+                    exit={{ color: 'none' }}
+                >
                     {/* Shared Layout Component */}
 
                     {/* Heading*/}
@@ -72,7 +80,7 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </Container>
         </>
     )

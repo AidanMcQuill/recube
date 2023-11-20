@@ -2,6 +2,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import React from 'react'
 import { Gallery } from './Gallery'
 import { OrbitControls } from '@react-three/drei'
+import Footer from '../JSX/Footer'
 
 export default function Main3D() {
     const MyMesh = React.useRef()
@@ -35,6 +36,7 @@ export default function Main3D() {
                     <Gallery />
                 </mesh>
             </Canvas>
+            
         </div>
     )
 }

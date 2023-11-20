@@ -6,6 +6,8 @@ import { IconContext } from 'react-icons'
 
 // LOGOS
 import { DiBootstrap } from 'react-icons/di'
+import Footer from './Footer'
+import BackToTopButton from './BackToTopButton'
 
 export default function Skills() {
     return (
@@ -70,6 +72,8 @@ export default function Skills() {
                     </div>
                 </div>
             </Container>
+            <BackToTopButton/>
+            <Footer/>
         </>
     )
 }
