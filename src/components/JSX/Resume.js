@@ -78,8 +78,12 @@ export default function Resume() {
                     {/* Training */}
                     <div className='training'>
                         <h2>TECHNICAL TRAINING</h2>
-                        <h3 className='mini'>Full Stack Coding Program, Centriq Training <span>Anticipated Graduation:</span></h3> 
-                        <h3>Kansas City, MO <span>December 2023</span></h3>  
+                        <h3 className='mini'>
+                            Full Stack Coding Program, Centriq Training <span>Anticipated Graduation:</span>
+                        </h3>
+                        <h3>
+                            Kansas City, MO <span>December 2023</span>
+                        </h3>
                         <ul>
                             <li>.NET Core MVC framework</li>
                             <li>Full Stack Web Application Design</li>
@@ -90,12 +94,19 @@ export default function Resume() {
                             <li>Unit Testing</li>
                             <li>Software Development Lifecycle</li>
                             <li>Agile Scrum Methodology</li>
-                        </ul>              
+                        </ul>
                     </div>
                     <hr />
                     <div className='download'>
-                    <a href="~/assets/img/AidanMcQuillanResume(8-18-23).pdf" target="_blank">Download It Here!</a>
+                        <a href='~/assets/img/AidanMcQuillanResume(8-18-23).pdf' target='_blank'>
+                            Download It Here!
+                        </a>
                     </div>
+                </div>
+                <div className='nextPage'>
+                    <a href='/portfolio' className='Border'>
+                        Next: Portfolio
+                    </a>
                 </div>
             </Container>
         </>

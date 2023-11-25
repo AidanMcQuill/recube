@@ -12,12 +12,17 @@ const ProjectModal = ({ show, onHide, project }) => {
   }
 
   return (
-        <Modal show={show} onHide={onHide} size="lg" centered className="Border CustomModal">
+        <Modal show={show} onHide={onHide} size="lg" centered className="Modal"
+        style={{
+          border: 'solid 3px nblac',
+          
+        }}>
           <Modal.Header closeButton>
-            <Modal.Title>{project.title}</Modal.Title>
+            <Modal.Title className='modalHead'>{project.title}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className='modalBody'>
             <img src={project.image} alt={project.title} className="img-fluid" />
+            <hr />
             <p>{project.description}</p>
             <p>Skills Used: {project.skills}</p>
             <p>
@@ -27,7 +32,7 @@ const ProjectModal = ({ show, onHide, project }) => {
             </p>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={onHide} className='Border'>
+            <Button variant="secondary" onClick={onHide} className='modalButton' >
               Close 
             </Button>
           </Modal.Footer>

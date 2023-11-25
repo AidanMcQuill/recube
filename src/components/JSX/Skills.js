@@ -71,6 +71,9 @@ export default function Skills() {
                         <h4 className='Border'>Mobile</h4>
                     </div>
                 </div>
+                <div className='nextPage'>
+                        <a href="/resume" className='Border'>Next: Resume</a>
+                    </div>
             </Container>
             <BackToTopButton/>
             <Footer/>

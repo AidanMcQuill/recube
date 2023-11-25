@@ -5,6 +5,7 @@ import HeroShot from '../../assets/HeroShot.jpg'
 import './page.scss'
 import Container from 'react-bootstrap/Container'
 import { motion } from 'framer-motion'
+import Footer from './Footer'
 
 export default function AboutMe() {
     return (
@@ -80,6 +81,10 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
+                    <div className='nextPage '>
+                        <a href="/skills" className='Border'>Next: Skills</a>
+                    </div>
+                    <Footer/>
                 </motion.div>
             </Container>
         </>

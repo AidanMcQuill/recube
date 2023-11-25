@@ -74,6 +74,11 @@ export default function Portfolio() {
                         ))}
                     </div>
                 </div>
+            <div className='nextPort'>
+                    <a href='/connections' className='Border'>
+                        Next: Connections
+                    </a>
+                </div>
             </Container>
             <Footer />
             <ProjectModal show={showModal} onHide={handleHideModal} project={selectedProject} />

@@ -32,17 +32,8 @@ export default function BackToTopButton() {
     }
 
     return (
-        <div>
+        <div className="UpToTop">
             <button
-                style={{
-                    position: 'fixed',
-                    bottom: '50px',
-                    right: '30px',
-                    fontSize: '50px',
-                    border: 'none',
-                    backgroundColor: 'transparent',
-                    color: 'black',
-                }}
                 onClick={scrollUp}
                 className={`scrollin ${scrollVisible ? 'visible' : ''}`}
             >

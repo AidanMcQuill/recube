@@ -25,7 +25,7 @@ export default function Connections() {
                             projects. Join me in navigating this network, discovering the diverse talents within our community.
                         </p>
                     </div>
-                        <h3>Centriq's Full Stack Coding Program</h3>
+                    <h3>Centriq's Full Stack Coding Program</h3>
                     {/* Main */}
                     <div className='connect pt-3'>
                         {/* Section 2 */}
@@ -33,24 +33,34 @@ export default function Connections() {
                         <li className='cards_item'>
                             <div className='Border cons '>
                                 <img src={NoImage} alt='BlockBeasts' />
-                                <a href="aliciavillegas.net "className="Border">Alex Davenport</a>
+                                <a href='aliciavillegas.net ' className='Border'>
+                                    Alex Davenport
+                                </a>
                             </div>
                         </li>
                         <li className='cards_item'>
                             <div className='Border cons '>
                                 <img src={Alicia} alt='BlockBeasts' />
-                                <a href="aliciavillegas.net "className="Border">Alicia Villegas</a>
+                                <a href='aliciavillegas.net ' className='Border'>
+                                    Alicia Villegas
+                                </a>
                             </div>
                         </li>
 
                         <li className='cards_item'>
                             <div className='Border cons card2'>
                                 <img src={Chanel} alt='ToDo' />
-                                <a href="aliciavillegas.net "className="Border">Alicia Villegas</a>
+                                <a href='aliciavillegas.net ' className='Border'>
+                                    Alicia Villegas
+                                </a>
                             </div>
                         </li>
-
                     </div>
+                </div>
+                <div className='nextConn'>
+                    <a href='/contact' className='Border'>
+                        Next: Contact Me
+                    </a>
                 </div>
             </Container>
         </>

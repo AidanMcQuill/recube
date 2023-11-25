@@ -97,6 +97,26 @@ body {
         font-family: MyFont;
         margin-right: 3vw;
     }
+    .Btext{
+        text-decoration: underline;
+    }
+    .Btext:hover{
+        font-weight: bold;
+    }
+}
+
+.nextPage{
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 25px;
+    a{
+        padding: 15px;
+        font-size: larger;
+        color: #000;
+    }
+    a:hover{
+        color: #494949;
+    }
 }
 
 .footer {
@@ -108,15 +128,29 @@ body {
     }
 }
 
-.Modal centered {
-    border: 20px solid #000000 !important;
-    border-radius: 10px;
-}
+.modal-content {
+       border: 7px solid black !important;
+      };
 
-.modalContainer .customModal {
-    border: 20px solid #000000 !important;
-    border-radius: 10px;
-    /* Add any other styles you want to customize */
+.modalBody{
+    font-family: Chicago;
+    a{
+        font-size: x-large;
+        color: #000 !important;
+    }
+    a:hover{
+        color: #494949 !important;
+    }
+}
+.modalHead{
+    font-family: MyFont;
+}
+.modalButton{
+    font-family: MyFont !important;
+    background-color: #000 !important;
+}
+.modalButton:hover{
+    background-color: #494949 !important;
 }
 
 .scrollin,
@@ -128,6 +162,22 @@ body {
 .scrollin.visible,
 .scrollout.visible {
     opacity: 1;
+}
+
+.UpToTop{
+    button{
+        position: fixed;
+        bottom: 50px;
+        right: 15px;
+        font-size: 50px;
+        border: none;
+        background-color: transparent;
+        color: black;
+        @media only screen and (max-width: 600px) {
+            right: -25px
+        }
+    }
+
 }
 
 //ABOUT
@@ -256,6 +306,8 @@ p {
     padding: 10px;
     margin: 10px;
 
+    
+
     .row {
         margin-bottom: 20px;
         justify-content: center;
@@ -360,6 +412,22 @@ p {
     //     grid-column: 7/ 9;
     //
     // }
+    .nextPort{
+        
+        padding: 25px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        a{
+            padding: 15px;
+            font-size: larger;
+            color: #000;
+        }
+        a:hover{
+            color: #494949;
+        }
+    }
 }
 .cards {
     //DIV
@@ -557,6 +625,21 @@ p {
                 vertical-align: middle;
                 border: solid 3px #000000;
             }
+        }
+    }
+    .nextConn{
+        padding: 25px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        a{
+            padding: 15px;
+            font-size: larger;
+            color: #000;
+        }
+        a:hover{
+            color: #494949;
         }
     }
 }
