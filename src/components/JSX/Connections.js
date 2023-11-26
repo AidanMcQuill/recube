@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from './Layout'
 import Container from 'react-bootstrap/Container'
+import { motion } from 'framer-motion'
+import BackToTopButton from './BackToTopButton'
 // Images
 import Alicia from '../../assets/classmates/AliciaVillegas.jpg'
 import Chanel from '../../assets/classmates/ChanelDubreuil.jpg'
@@ -13,8 +15,12 @@ import NoImage from '../../assets/classmates/NoImage.jpg'
 export default function Connections() {
     return (
         <>
+        <div className='ConnPop pops'>
+                <h4>Connections</h4>
+            </div>
             <Layout />
             <Container className='connections'>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 3 } }} exit={{ color: 'none' }}>
                 <div className='conn'>
                     {/* Heading  */}
                     <h2>Connections</h2>
@@ -57,6 +63,9 @@ export default function Connections() {
                         </li>
                     </div>
                 </div>
+                <BackToTopButton />
+
+                </motion.div>
                 <div className='nextConn'>
                     <a href='/contact' className='Border'>
                         Next: Contact Me

@@ -45,8 +45,42 @@
   }
 
   .ArtCard{
-    font-family: Chicago, Verdana, sans-serif;
-    font-weight: bold;
+    pointer-events: none;
+      position: absolute;
+      top: 40px;
+      left: 80px;
+      font-size: '18px';
+      text-align: left;
+      bottom: 250px;
+      font-family: Chicago, Verdana, sans-serif;
+      font-weight: bold;
+      .mobileMenu{opacity: 0;}
+      .mobileMessage{opacity: 0;}
+      @media only screen and (max-width: 600px) {
+        top: 75px;
+        .mobileMenu{
+          pointer-events:all;
+          opacity: 1;
+          margin-top: 15px;
+          font-family: MyFont;
+          .dropBTN{
+            margin-left: 15%;
+            background-color: black;
+            border: solid 5px black;
+          }
+        }
+        .mobileMessage{
+          opacity: 1;
+          text-align: center;
+          margin-top: 50%;
+          margin-right: 25%;
+          background-color: #e0e0e0;
+          border: solid 3px black;
+          font-size: large;
+          
+        }
+
+    }
     
   }
   span{

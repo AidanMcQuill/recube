@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from './Layout'
 import HeroShot from '../../assets/HeroShot.jpg'
-
+import BackToTopButton from './BackToTopButton'
 import './page.scss'
 import Container from 'react-bootstrap/Container'
 import { motion } from 'framer-motion'
@@ -10,8 +10,8 @@ import Footer from './Footer'
 export default function AboutMe() {
     return (
         <>
-            <div className='aboutPop'>
-                <h4>About Me</h4>
+            <div className='aboutPop pops'>
+                <h4>About</h4>
             </div>
             <Layout />
             <Container className='about'>
@@ -42,8 +42,8 @@ export default function AboutMe() {
                             <ul>
                                 <li>
                                     <i class='bi bi-chevron-right'></i> <strong>LinkedIn:</strong>{' '}
-                                    <a href='http://www.aidanmcquillan.com/'>
-                                        <p2>aidanmcquillan.com</p2>
+                                    <a href='https://www.linkedin.com/in/aidan-mcquillan-67a245289/'target="_blank" rel="noopener noreferrer" >
+                                        <p2>Aidan McQuillan</p2>
                                     </a>
                                 </li>
                                 <li>
@@ -86,6 +86,7 @@ export default function AboutMe() {
                     </div>
                     <Footer/>
                 </motion.div>
+                <BackToTopButton/>
             </Container>
         </>
     )

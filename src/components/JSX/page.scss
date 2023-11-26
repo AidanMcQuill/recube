@@ -1,12 +1,18 @@
 body {
     font-family: Chicago, Verdana, sans-serif;
+
 }
 
 .Welcome {
     position: absolute;
-    top: 450px;
-    left: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+    opacity: 0;
+    }
     h4 {
+        text-align: center;
         font-size: 100px;
         animation: fadeOut 2.5s ease-in-out forwards; /* Use your preferred duration and timing function */
     }
@@ -18,61 +24,199 @@ body {
             opacity: 0; /* Fade to completely transparent */
         }
     }
-
 }
+
 .aboutPop {
-    position: absolute;
     z-index: 2;
-    top: 300px;
-    left: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+        opacity: 0;
+        }
     h4 {
         font-size: 200px;
-        animation: fadeOut 1.5s ease-in-out forwards;  
-    @keyframes fadeOut {
-        0% {
-            opacity: 0;  
-        }
-        10%{
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;  
+        animation: fadeOut 1.5s ease-in-out forwards;
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
         }
     }
 }
+.skillPop {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+        opacity: 0;
+        }
+    h4 {
+        font-size: 200px;
+        animation: fadeOut 1.5s ease-in-out forwards;
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+}
+.resumePop {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+        opacity: 0;
+        }
+    h4 {
+        font-size: 200px;
+        animation: fadeOut 1.5s ease-in-out forwards;
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+}
+.ConnPop {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+        opacity: 0;
+        }
+    h4 {
+        font-size: 200px;
+        animation: fadeOut 1.5s ease-in-out forwards;
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+}
+.PortPop {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+        opacity: 0;
+        }
+    h4 {
+        font-size: 200px;
+        animation: fadeOut 1.5s ease-in-out forwards;
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+}
+.TeamPop {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+        opacity: 0;
+        }
+    h4 {
+        font-size: 200px;
+        animation: fadeOut 1.5s ease-in-out forwards;
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
 }
 .ClickMe {
     position: absolute;
-    top: 450px;
-    left: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 600px) {
+        opacity: 0;
+        }
     h4 {
         font-size: 100px;
-        animation: FadeIn 6s ease-in-out forwards; 
+        animation: FadeIn 6s ease-in-out forwards;
         animation-delay: 2.75s;
         opacity: 0;
     }
     @keyframes FadeIn {
-        0%{
+        0% {
             opacity: 0; /* Start with full opacity */
         }
-        25%{
+        25% {
             opacity: 1;
         }
         50% {
             opacity: 0; /* Fade to completely transparent */
         }
-        75%{
+        75% {
             opacity: 1;
         }
-        100%{
+        100% {
             opacity: 0;
         }
     }
     @-webkit-keyframes pan {
-        0%, 10%       { -webkit-transform: translate3d( 0%, 0px, 0px); }
-        90%, 100%     { -webkit-transform: translate3d(-50%, 0px, 0px); }
-     }
-
+        0%,
+        10% {
+            -webkit-transform: translate3d(0%, 0px, 0px);
+        }
+        90%,
+        100% {
+            -webkit-transform: translate3d(-50%, 0px, 0px);
+        }
+    }
 }
 // HEADER
 .Layout {
@@ -97,24 +241,59 @@ body {
         font-family: MyFont;
         margin-right: 3vw;
     }
-    .Btext{
+    .Btext {
         text-decoration: underline;
     }
-    .Btext:hover{
+    .Btext:hover {
         font-weight: bold;
     }
 }
+.mobileMenu {
+    opacity: 1;
+    font-family: MyFont;
+    max-width: 30%;
+    margin-left: 47.5%;
+    bottom: 80px;
+    .dropBTN {
+        background-color: black;
+        border: solid 5px black;
+    }
+    @media only screen and (max-width: 600px) {
+        opacity: 1;
+        font-family: MyFont;
+        margin: 20px;
+        bottom: 0px;
+        max-width: 100%;
+        .dropBTN {
+            margin-left: 35%;
+            background-color: black;
+            border: solid 5px black;
+        }
+        :hover {
+            background-color: #494949 !important;
+            border: solid 5px #494949 !important;
+        }
+    }
+}
+.hrMobile {
+    opacity: 0;
+    margin-bottom: -20px;
+    @media only screen and (max-width: 600px) {
+        opacity: 0.3;
+        margin-bottom: 20px;
+    }
+}
 
-.nextPage{
+.nextPage {
     text-align: center;
     padding: 25px;
     margin-bottom: 25px;
-    a{
+    a {
         padding: 15px;
         font-size: larger;
         color: #000;
     }
-    a:hover{
+    a:hover {
         color: #494949;
     }
 }
@@ -128,28 +307,32 @@ body {
     }
 }
 
-.modal-content {
-       border: 7px solid black !important;
-      };
+.modal{
+    margin-top: 10%;
+}
 
-.modalBody{
+.modal-content {
+    border: 7px solid black !important;
+}
+
+.modalBody {
     font-family: Chicago;
-    a{
+    a {
         font-size: x-large;
         color: #000 !important;
     }
-    a:hover{
+    a:hover {
         color: #494949 !important;
     }
 }
-.modalHead{
+.modalHead {
     font-family: MyFont;
 }
-.modalButton{
+.modalButton {
     font-family: MyFont !important;
     background-color: #000 !important;
 }
-.modalButton:hover{
+.modalButton:hover {
     background-color: #494949 !important;
 }
 
@@ -164,8 +347,8 @@ body {
     opacity: 1;
 }
 
-.UpToTop{
-    button{
+.UpToTop {
+    button {
         position: fixed;
         bottom: 50px;
         right: 15px;
@@ -174,10 +357,9 @@ body {
         background-color: transparent;
         color: black;
         @media only screen and (max-width: 600px) {
-            right: -25px
+            right: -25px;
         }
     }
-
 }
 
 //ABOUT
@@ -306,8 +488,6 @@ p {
     padding: 10px;
     margin: 10px;
 
-    
-
     .row {
         margin-bottom: 20px;
         justify-content: center;
@@ -412,19 +592,18 @@ p {
     //     grid-column: 7/ 9;
     //
     // }
-    .nextPort{
-        
+    .nextPort {
         padding: 25px;
         margin-bottom: 25px;
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
-        a{
+        a {
             padding: 15px;
             font-size: larger;
             color: #000;
         }
-        a:hover{
+        a:hover {
             color: #494949;
         }
     }
@@ -604,6 +783,7 @@ p {
     margin: 10px;
     padding: 50px;
     padding-bottom: 200px;
+    margin-top: -75px;
 
     .cards_item {
         padding: 1.5rem;
@@ -627,18 +807,18 @@ p {
             }
         }
     }
-    .nextConn{
+    .nextConn {
         padding: 25px;
         margin-bottom: 25px;
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
-        a{
+        a {
             padding: 15px;
             font-size: larger;
             color: #000;
         }
-        a:hover{
+        a:hover {
             color: #494949;
         }
     }
@@ -711,44 +891,81 @@ p {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     justify-content: center;
-}
 
-.mainForm {
-    padding: 15px;
-    margin: 20px;
     .Head {
+        padding: 10px;
         h2 {
-            margin: 30px;
+            padding: 20px;
+            margin-bottom: 15px;
         }
     }
 
-    .Form {
-        text-align: left;
-        label {
-            font-family: MyFont;
+    .mainForm {
+        padding: 10px;
+        margin-top: 50px;
+
+        .Form {
+            text-align: center;
+            display: flexbox;
+            label {
+                font-family: MyFont;
+                padding: 10px;
+                margin: 5px;
+                text-align: left;
+            }
+            input {
+                margin-left: 0px;
+                padding: 10px;
+            }
+            ul {
+                text-align: left;
+                margin-top: 15px;
+                max-width: 50%;
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            li {
+                flex: 50%; /* Set to 50% to create two columns */
+                padding: 5px;
+                text-align: left;
+                font-weight: 700;
+            }
+
+        }
+
+        .Links{
+            margin-top: 50px;
             padding: 10px;
-            margin: 5px;
+            
+            p{
+                padding: 5%;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            h1{
+                margin: 40px;
+                a {
+                    font-family: MyFont;
+                    background-color: #eee;
+                    color: #000;
+                }
+                a:hover {
+                    color: #494949;
+                }
+            }
         }
-        input {
-            padding: 10px;
-        }
-        ul {
-            text-align: left;
-            margin-top: 15px;
-            max-width: 60%;
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        li {
-            flex: 50%; /* Set to 50% to create two columns */
-            padding: 5px;
-            text-align: left;
-            font-weight: 700;
+
+        .modal{
+            
+                font-family: Chicago, Verdana, sans-serif;
+            Modal.Header{
+                font-family: MyFont !important;
+            }
         }
     }
 }

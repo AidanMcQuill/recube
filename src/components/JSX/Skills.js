@@ -3,6 +3,7 @@ import Layout from './Layout'
 import Container from 'react-bootstrap/Container'
 import './page.scss'
 import { IconContext } from 'react-icons'
+import { motion } from 'framer-motion'
 
 // LOGOS
 import { DiBootstrap } from 'react-icons/di'
@@ -12,6 +13,14 @@ import BackToTopButton from './BackToTopButton'
 export default function Skills() {
     return (
         <>
+        <div className='skillPop pops'>
+                <h4>Skills</h4>
+            </div>
+            <motion.div
+                    initial={{ opacity: 0,}}
+                    animate={{ opacity: 1, transition: { duration: 3 }}}
+                    exit={{ color: 'none' }}
+                >
             <Layout />
             <Container className='skills'>
                 {/* Section 1 */}
@@ -75,6 +84,7 @@ export default function Skills() {
                         <a href="/resume" className='Border'>Next: Resume</a>
                     </div>
             </Container>
+            </motion.div>
             <BackToTopButton/>
             <Footer/>
         </>
