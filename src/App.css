@@ -6,9 +6,18 @@
     background-Size: cover;
     background-image: var(--gradient);
     background-size: 600%;
-    animation: bg-animation 10s infinite alternate;
+    animation: bg-animation 7.5s infinite alternate;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
      font-family: Chicago;
+     cursor: url('./assets/Cursors/Cartoon\ Hand\ normal.cur'), auto;
+     cursor: url('./assets/Cursors/Cartoon\ Hand\ alternate.cur'), pointer;
     
+    }
+   
+
+    button{
+      cursor: url('./assets/Cursors/Cartoon\ Hand\ alternate.cur'), pointer;
     }
   
     @keyframes bg-animation {
@@ -21,11 +30,11 @@
       --gradient: linear-gradient(
         45deg,
         #e5e5e5,
-        #b5b5b5,
+        #acacac,
         #e5e5e5,
-        #b5b5b5,
-        #e0e0e0,
-        #b5b5b5
+        #acacac,
+        #e5e5e5,
+        #acacac
         /* #00a388,
         #63A69F,
         #F2E1AC,
@@ -34,7 +43,7 @@
         #CD2C24 */
       );
   }
-  
+
   @font-face {
     font-family: 'MyFont';
     src: local('MyFont'), url(./assets/Pixel_NES.otf) format('woff');
@@ -91,5 +100,10 @@
   .tiny{
     font-size: smaller;
     font-weight: bolder;
-    
+    @media only screen and (max-width: 600px) {
+  
+      font-size: small;
+    }
   }
+
+ 

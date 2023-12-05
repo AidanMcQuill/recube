@@ -1,22 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Layout from './Layout'
 import BackToTopButton from './BackToTopButton'
 import { motion } from 'framer-motion'
+import Footer from './Footer'
+import { useNavigate } from 'react-router-dom'
+import resume from '../../assets/AidanMcQuillanResume(11-26-23).pdf'  
 
 export default function Resume() {
+    const navigate = useNavigate()
+    const [active, setActive] = useState(true)
+
+    const handleClick = (route) => {
+        setActive(!active)
+        // Navigate to the AboutMe component when the mesh is clicked
+        navigate(route)
+    }
+
+
+    const handleBackToTopClick = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+
     return (
         <>
-        <div className='resumePop pops'>
+            <div className='resumePop pops'>
                 <h4>Resume</h4>
             </div>
             <Layout />
             <Container className='resume'>
-            <motion.div
-                    initial={{ opacity: 0,}}
-                    animate={{ opacity: 1, transition: { duration: 3 }}}
-                    exit={{ color: 'none' }}
-                >
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 3 } }} exit={{ color: 'none' }}>
                     {/* RESUME */}
                     <div>
                         {/* HEADER */}
@@ -53,12 +69,15 @@ export default function Resume() {
                                     <span>Middle Tier:</span> C#, .NET Core MVC, LINQ, EF, Razor Pages
                                 </li>
                                 <li>
-                                    <span>Back End:</span> SQL, SQL Server, Axios Tools: Azure Data Studio, Visual Studio, Visual Studio Code,
-                                    SSMS, Git Bash
+                                    <span>Back End:</span> SQL, SQL Server, Axios Tools: Azure Data Studio, Visual Studio, Visual Studio
+                                    Code, SSMS, Git Bash
+                                </li>
+                                <li>
+                                    <span>Creative Tools:</span> Adobe Creative Suite, Blender, Aseprite, Handbrake, FLstudio
                                 </li>
                                 <li>
                                     <span>Professional Skills:</span> Troubleshooting, Critical Thinking, Communication, Project Management
-                                    Fundamentals, Teamwork, Pair Programming, Creativity.
+                                    Fundamentals, Teamwork, Pair Programming, Visual Studio, Visual Studio Code, SSMS, Git Bash, Creativity
                                 </li>
                             </ul>
                         </div>
@@ -68,19 +87,24 @@ export default function Resume() {
                             <h2>INDEPENDENT DEVELOPMENT PROJECTS</h2>
                             <ul>
                                 <li>
-                                    <span>Personal Site:</span> Through the fusion of HTML, CSS, and JavaScript, I artfully constructed a
-                                    personal webpage. This space not only showcases my full stack portfolio with finesse but also paints a vivid
-                                    picture of my identity and capabilities.
+                                    <span>Personal Site:</span> Leveraging ReactJS, HTML, CSS, and incorporating 3D models, I meticulously
+                                    crafted my personal website. This dynamic space not only exhibits my full-stack portfolio with finesse
+                                    but also offers a vibrant and immersive glimpse into my identity as a developer, infusing flair into my
+                                    digital presence.
                                 </li>
                                 <li>
-                                    <span>Storefront</span> Created a secure application for managing product data. Application is built to
-                                    simulate an online store front with a shopping cart. Administrators can manage product, category and vendor
-                                    data.
+                                    <span>Storefront - AirAidans:</span> Architected a secure MVC .NET Core application for managing product
+                                    data within the realm of a virtual shoe store named AirAidans. Employing an active database and MVC
+                                    architecture, the application provides a seamless shopping experience. Users can explore a diverse
+                                    product range, securely add items to their session-based locker, and enjoy authentication and login
+                                    features for a personalized and secure shopping journey.
                                 </li>
                                 <li>
-                                    <span>Web API:</span> I introduced an exciting twist by allowing players to embody a fearsome beast in the
-                                    console dungeon game I developed with C#, Block Beasts. I use fundamental C# skills to deliver an exciting
-                                    console app experience.
+                                    <span>Web API | To-Do List:</span> Demonstrating proficiency in full-stack development, I created a
+                                    robust Web API integrated with a To-Do list using ReactJS. This project showcases my ability to manage
+                                    APIs and databases, with the added functionality of Swagger for enhanced API documentation. The result
+                                    is a fully functional web application that highlights my expertise in creating and maintaining APIs
+                                    while ensuring a smooth user experience.
                                 </li>
                             </ul>
                         </div>
@@ -95,32 +119,40 @@ export default function Resume() {
                                 Kansas City, MO <span>December 2023</span>
                             </h3>
                             <ul>
-                                <li>.NET Core MVC framework</li>
-                                <li>Full Stack Web Application Design</li>
-                                <li>C# Fundamentals</li>
-                                <li>JavaScript </li>
+                                <li>Troubleshooting & Debugging</li>
+                                <li>Source Control</li>
+                                <li>Agile / Scrum</li>
                                 <br />
-                                <li>Database Management</li>
-                                <li>Unit Testing</li>
-                                <li>Software Development Lifecycle</li>
-                                <li>Agile Scrum Methodology</li>
+                                <li>Website Deployment</li>
+                                <li>Pair Programming</li>
+                                <li>Code Review</li>
                             </ul>
                         </div>
                         <hr />
                         <div className='download'>
-                            <a href='~/assets/img/AidanMcQuillanResume(8-18-23).pdf' target='_blank'>
+                            <a href={resume} 
+                            download='Aidan McQuillan Resume'
+                             target='_blank' 
+                             rel='noreferrer'>
                                 Download It Here!
                             </a>
                         </div>
                     </div>
-                    <div className='nextPage'>
-                        <a href='/portfolio' className='Border'>
+                    <div className='nextPage mt-5'>
+                        <h1 className=' nexts5 Border' onClick={() => handleClick('/portfolio')}>
                             Next: Portfolio
-                        </a>
+                        </h1>
+                    </div>
+
+                    <div className='BackTop mt-5'>
+                        <h1 className=' nexts5 ' onClick={handleBackToTopClick}>
+                            Back To Top
+                        </h1>
                     </div>
                 </motion.div>
-                <BackToTopButton/>
+                <BackToTopButton />
             </Container>
+            <Footer />
         </>
     )
 }

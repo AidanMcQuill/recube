@@ -1,0 +1,51 @@
+﻿[Arrow]
+Path=Cartoon Hand normal.cur
+
+[Help]
+Path=Cartoon Hand help.cur
+
+[AppStarting]
+Path=Cartoon Hand working in background.ani
+
+[Wait]
+Path=Cartoon Hand busy.ani
+
+[Crosshair]
+Path=Cartoon Hand precision.cur
+
+[IBeam]
+Path=Cartoon Hand text.cur
+
+[NWPen]
+Path=Cartoon Hand handwriting.cur
+
+[No]
+Path=Cartoon Hand unavailable.ani
+
+[SizeNS]
+Path=Cartoon Hand vertical.ani
+
+[SizeWE]
+Path=Cartoon Hand horizontal.ani
+
+[SizeNWSE]
+Path=Cartoon Hand diagonal 1.ani
+
+[SizeNESW]
+Path=Cartoon Hand diagonal 2.ani
+
+[SizeAll]
+Path=Cartoon Hand move.cur
+
+[UpArrow]
+Path=Cartoon Hand alternate.cur
+
+[Hand]
+Path=Cartoon Hand link 1.ani
+
+[Pin]
+Path=Cartoon Hand location.cur
+
+[Person]
+Path=Cartoon Hand person.cur
+

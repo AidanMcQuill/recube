@@ -31,19 +31,19 @@ export default function Layout() {
                 <Dropdown.Toggle className='dropBTN' variant="secondary">Menu</Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    <Dropdown.Item href='/'>Home</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/')}>Home</Dropdown.Item>
                     <hr />
-                    <Dropdown.Item href='/about'>About Me</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/about')}>About Me</Dropdown.Item>
                     <hr />
-                    <Dropdown.Item href='/skills'>Skills</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/skills')}>Skills</Dropdown.Item>
                     <hr />
-                    <Dropdown.Item href='/resume'>Resume</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/resume')}>Resume</Dropdown.Item>
                     <hr />
-                    <Dropdown.Item href='/portfolio'>Portfolio</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/portfolio')}>Portfolio</Dropdown.Item>
                     <hr />
-                    <Dropdown.Item href='/connections'>Connections</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/connections')}>Connections</Dropdown.Item>
                     <hr />
-                    <Dropdown.Item href='/contact'>Team Up</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/contact')}>Team Up</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             <hr className='hrMobile' />

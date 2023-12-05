@@ -6,8 +6,38 @@ import './page.scss'
 import Container from 'react-bootstrap/Container'
 import { motion } from 'framer-motion'
 import Footer from './Footer'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import PokeAPI from './PokeAPI'
+import { CgPokemon } from 'react-icons/cg'
+import { useNavigate } from 'react-router-dom'
 
 export default function AboutMe() {
+    const [pokemonNameInput, setPokemonNameInput] = useState('')
+
+    const handleInputChange = (e) => {
+        setPokemonNameInput(e.target.value)
+    }
+
+    const handleBackToTopClick = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      };
+    
+
+    const examplePokemonNames = ['pikachu', 'charizard', 'eevee', 'muk']
+
+    const navigate = useNavigate()
+    const [active, setActive] = useState(true)
+
+    const handleClick = (route) => {
+        setActive(!active)
+        // Navigate to the AboutMe component when the mesh is clicked
+        navigate(route)
+    }
+
     return (
         <>
             <div className='aboutPop pops'>
@@ -15,11 +45,7 @@ export default function AboutMe() {
             </div>
             <Layout />
             <Container className='about'>
-                <motion.div
-                    initial={{ opacity: 0,}}
-                    animate={{ opacity: 1, transition: { duration: 3 }}}
-                    exit={{ color: 'none' }}
-                >
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 3 } }} exit={{ color: 'none' }}>
                     {/* Shared Layout Component */}
 
                     {/* Heading*/}
@@ -36,16 +62,10 @@ export default function AboutMe() {
                     </div>
 
                     {/* Main Section */}
-                    <div class='row pt-5 con'>
+                    <div class='row pt-5 Aboutcon'>
                         <div class='col-lg-4'>
                             <img src={HeroShot} class='img-fluid img-size img-shadow Border' alt='' />
                             <ul>
-                                <li>
-                                    <i class='bi bi-chevron-right'></i> <strong>LinkedIn:</strong>{' '}
-                                    <a href='https://www.linkedin.com/in/aidan-mcquillan-67a245289/'target="_blank" rel="noopener noreferrer" >
-                                        <p2>Aidan McQuillan</p2>
-                                    </a>
-                                </li>
                                 <li>
                                     <i class='bi bi-chevron-right'></i> <strong>City:</strong> <span>Clarkston, Michigan</span>
                                 </li>
@@ -67,7 +87,7 @@ export default function AboutMe() {
                             </p> */}
                             <br />
 
-                            <p className='Border sum'>
+                            <p className='Border Aboutsum'>
                                 Hello, I'm Aidan McQuillan, a Michigan-based web developer about to graduate from Centriq's Full Stack Web
                                 Development bootcamp. I've immersed myself in the .NET Core MVC framework, C#, and the art of full-stack web
                                 application design.
@@ -81,12 +101,51 @@ export default function AboutMe() {
                             </p>
                         </div>
                     </div>
-                    <div className='nextPage '>
-                        <a href="/skills" className='Border'>Next: Skills</a>
+                    <div class='row pt-5 PokeRow'>
+                        <div className='col-lg-4 '>
+                            <p className='Border game'>
+                                <h1>Pokemon API</h1>
+                                <hr />
+                                Immersing myself in the expansive world of video games, I seamlessly fuse my passion for gaming with
+                                development skills, integrating the PokeAPI using Axios requests. This implementation allows users to
+                                effortlessly explore detailed information about any Pokémon of their choice. Gotta Request 'Em All!
+                                <CgPokemon />
+                            </p>
+                        </div>
+
+                        <div className='col-md-5 box Border'>
+                            <input type='text' placeholder='Enter Pokémon name' value={pokemonNameInput} onChange={handleInputChange} />
+                            {pokemonNameInput === '' && (
+                                <div className='example-box'>
+                                    <p>Example Pokémon Names:</p>
+                                    <ul>
+                                        {examplePokemonNames.map((name) => (
+                                            <li key={name} onClick={() => setPokemonNameInput(name)}>
+                                                {name}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+                            {pokemonNameInput && <PokeAPI pokemonName={pokemonNameInput} />}
+                        </div>
                     </div>
-                    <Footer/>
+
+                    <div className='nextPage mt-5'>
+                        <h1 className=' nexts Border' onClick={() => handleClick('/skills')}>
+                            Next: Skills
+                        </h1>
+                    </div>
+
+                    <div className='BackTop mt-5'>
+                        <h1 className=' nexts ' onClick={handleBackToTopClick}>
+                            Back To Top
+                        </h1>
+                    </div>
+
+                    <Footer />
                 </motion.div>
-                <BackToTopButton/>
+                <BackToTopButton />
             </Container>
         </>
     )

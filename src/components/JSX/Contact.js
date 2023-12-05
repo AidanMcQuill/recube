@@ -9,6 +9,8 @@ import BackToTopButton from './BackToTopButton'
 import { FaHammer } from 'react-icons/fa6'
 import { MdMessage } from 'react-icons/md'
 import { clear } from '@testing-library/user-event/dist/clear'
+import Footer from './Footer'
+import { useNavigate } from 'react-router-dom'
 
 export default function Contact() {
     const [show, setShow] = useState(false)
@@ -24,7 +26,7 @@ export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault()
 
-        emailjs.sendForm('service_ki1k89q', 'template_9nmz25m', form.current, 'Dr5IQsjo0UFrcl620').then(
+        emailjs.sendForm('service_ki1k89q', 'template_i7br13t', form.current, 'Dr5IQsjo0UFrcl620').then(
             (result) => {
                 console.log(result.text)
                 OpenSuccess()
@@ -34,6 +36,16 @@ export default function Contact() {
                 OpenFail()
             }
         )
+        e.target.reset()
+    }
+
+    const navigate = useNavigate()
+    const [active, setActive] = useState(true)
+
+    const handleClick = (route) => {
+        setActive(!active)
+        // Navigate to the AboutMe component when the mesh is clicked
+        navigate(route)
     }
 
     return (
@@ -47,7 +59,7 @@ export default function Contact() {
                     {/* Summary */}
                     <div className='Head'>
                         <h2 className='Border'>
-                            I'm ready to level up together. Feel free to drop a message, and let's craft something extraordinary in the
+                            Let's chat! Feel free to drop a message, and let's craft something extraordinary in the
                             world of full-stack development. <FaHammer />
                         </h2>
                     </div>
@@ -62,15 +74,19 @@ export default function Contact() {
                                     <ul>
                                         <li>
                                             <label>Name</label>
-                                            <input type='text' name='user_name' required='required' />
+                                            <input type='text' placeholder='Name' name='name' required='required' />
                                         </li>
                                         <li>
                                             <label>Email</label>
-                                            <input type='email' name='user_email' required='required' />
+                                            <input type='email' name='email' placeholder='Email Address' required='required' />
+                                        </li>
+                                        <li>
+                                            <label>Subject</label>
+                                            <input type='text' placeholder='Subject' name='subject' required='required' />
                                         </li>
                                         <li>
                                             <label>Message</label>
-                                            <textarea name='message' required='required' />
+                                            <textarea placeholder='Your Message' name='message' required='required' />
                                         </li>
                                         <li>
                                             <input type='submit' value='Send' />
@@ -90,7 +106,7 @@ export default function Contact() {
                                         </h1>
                                      
                                         <h1 className='Border'>
-                                            <a href='www.linkedin.com/in/aidan-mcquillan-67a245289' target='_blank' rel='noopener noreferrer'>
+                                            <a href='https://www.linkedin.com/in/aidan-mcquillan-67a245289/' target='_blank' rel='noopener noreferrer'>
                                                 LinkedIn
                                             </a>
                                         </h1>
@@ -104,7 +120,7 @@ export default function Contact() {
                             </div>
                         </div>
                         {/* SUCCESS MODAL */}
-                        <Modal show={show} onHide={closeSuccess} className='modal'>
+                        <Modal show={show} onHide={closeSuccess} className='Connmodal'>
                             <Modal.Header closeButton>
                                 <Modal.Title className='modalHead'>Thank You!</Modal.Title>
                             </Modal.Header>
@@ -119,7 +135,7 @@ export default function Contact() {
                             </Modal.Footer>
                         </Modal>
                         {/* FAIL MODAL */}
-                        <Modal show={show2} onHide={CloseFail} className='modal'>
+                        <Modal show={show2} onHide={CloseFail} className='Connmodal'>
                             <Modal.Header closeButton>
                                 <Modal.Title className='modalHead'>Error</Modal.Title>
                             </Modal.Header>
@@ -138,6 +154,7 @@ export default function Contact() {
                     <BackToTopButton />
                 </motion.div>
             </Container>
+            <Footer/>
         </>
     )
 }
