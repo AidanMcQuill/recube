@@ -939,6 +939,13 @@ p {
 
 // === CONNECTIONS ===
 
+.connect {
+    img {
+        min-width: 400;
+        min-height: 300px;
+    }
+}
+
 .connections {
     margin: 0 auto;
     display: flex;

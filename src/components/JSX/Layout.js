@@ -23,7 +23,7 @@ export default function Layout() {
                 </h1>
 
                 <h1 className='Btext team' onClick={() => handleClick('/contact')}>
-                    Team Up?
+                    Connect
                 </h1>
             </div>
             <hr />
@@ -43,7 +43,7 @@ export default function Layout() {
                     <hr />
                     <Dropdown.Item onClick={() => handleClick('/connections')}>Connections</Dropdown.Item>
                     <hr />
-                    <Dropdown.Item onClick={() => handleClick('/contact')}>Team Up</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleClick('/contact')}>Contact Me</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
             <hr className='hrMobile' />

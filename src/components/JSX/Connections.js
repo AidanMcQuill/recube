@@ -6,6 +6,7 @@ import BackToTopButton from './BackToTopButton'
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom'
 // Images
+import Alex from '../../assets/classmates/AlexDavenport.jpg'
 import Alicia from '../../assets/classmates/AliciaVillegas.jpg'
 import Chanel from '../../assets/classmates/ChanelDubreuil.jpg'
 import Chris from '../../assets/classmates/ChrisRandall.jpg'
@@ -58,15 +59,23 @@ export default function Connections() {
 
                         {/* <li className='cards_item'>
                             <div className='Border cons '>
-                                <img src={NoImage} alt='BlockBeasts' />
+                                <img src={NoImage} alt='ConImg' />
                                 <a href='' className='Border'>
                                     Alex Davenport (No Link)
                                 </a>
                             </div>
                         </li> */}
+                         <li className='cards_item'>
+                            <div className='Border cons '>
+                                <img src={Alex} alt='ConImg' />
+                                <a href='http://alex-davenport.com/' className='Border' target='_blank' rel='noreferrer'>
+                                    Alex Davenport
+                                </a>
+                            </div>
+                        </li>
                         <li className='cards_item'>
                             <div className='Border cons '>
-                                <img src={Alicia} alt='BlockBeasts' />
+                                <img src={Alicia} alt='ConImg' />
                                 <a href='http://aliciavillegas.net/ ' className='Border' target='_blank' rel='noreferrer'>
                                     Alicia Villegas
                                 </a>
@@ -83,7 +92,7 @@ export default function Connections() {
                         </li>
                         <li className='cards_item'>
                             <div className='Border cons '>
-                                <img src={Chris} alt='BlockBeasts' />
+                                <img src={Chris} alt='ConImg' />
                                 <a href='http://devchristopherrandall.com/' className='Border' target='_blank' rel='noreferrer'>
                                     Chris Randall
                                 </a>
@@ -91,7 +100,7 @@ export default function Connections() {
                         </li>
                         <li className='cards_item'>
                             <div className='Border cons '>
-                                <img src={Daniel} alt='BlockBeasts' />
+                                <img src={Daniel} alt='ConImg' />
                                 <a href='http://danielambro.com/' className='Border' target='_blank' rel='noreferrer'>
                                     Daniel Ambro
                                 </a>
@@ -108,7 +117,7 @@ export default function Connections() {
                         </li>
                         <li className='cards_item'>
                             <div className='Border cons '>
-                                <img src={Paul} alt='BlockBeasts' />
+                                <img src={Paul} alt='ConImg' />
                                 <a href='http://bluprintdevelopment.com/' className='Border' target='_blank' rel='noreferrer'>
                                     Paul Valenti
                                 </a>
@@ -116,12 +125,13 @@ export default function Connections() {
                         </li>
                         <li className='cards_item'>
                             <div className='Border cons '>
-                                <img src={Zoey} alt='BlockBeasts' />
+                                <img src={Zoey} alt='ConImg' />
                                 <a href='http://zoeybateman.com/' className='Border' target='_blank' rel='noreferrer'>
                                     Zoey Bateman
                                 </a>
                             </div>
                         </li>
+                       
 
                     </div>
                 </div>

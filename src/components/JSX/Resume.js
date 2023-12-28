@@ -5,7 +5,7 @@ import BackToTopButton from './BackToTopButton'
 import { motion } from 'framer-motion'
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom'
-import resume from '../../assets/AidanMcQuillanResume(11-26-23).pdf'  
+import resume from '../../assets/Aidan McQuillan - Web Resume .pdf'  
 
 export default function Resume() {
     const navigate = useNavigate()
@@ -47,8 +47,8 @@ export default function Resume() {
                             <ul>
                                 <li>.NET Core MVC framework</li>
                                 <li>Full Stack Web Application Design</li>
-                                <li>C# Fundamentals</li>
-                                <li>JavaScript </li>
+                                <li>Proficient C# skills </li>
+                                <li>React Development </li>
                                 <br />
                                 <li>Database Management</li>
                                 <li>Unit Testing</li>
@@ -73,7 +73,7 @@ export default function Resume() {
                                     Code, SSMS, Git Bash
                                 </li>
                                 <li>
-                                    <span>Creative Tools:</span> Adobe Creative Suite, Blender, Aseprite, Handbrake, FLstudio
+                                    <span>Tools:</span> AWS, Azure, Docker,  Adobe Creative Suite, Blender, Aseprite, Handbrake, FLstudio
                                 </li>
                                 <li>
                                     <span>Professional Skills:</span> Troubleshooting, Critical Thinking, Communication, Project Management
@@ -93,11 +93,7 @@ export default function Resume() {
                                     digital presence.
                                 </li>
                                 <li>
-                                    <span>Storefront - AirAidans:</span> Architected a secure MVC .NET Core application for managing product
-                                    data within the realm of a virtual shoe store named AirAidans. Employing an active database and MVC
-                                    architecture, the application provides a seamless shopping experience. Users can explore a diverse
-                                    product range, securely add items to their session-based locker, and enjoy authentication and login
-                                    features for a personalized and secure shopping journey.
+                                    <span>Intranet Client Portal | Atomic Synergistics:</span> : This MVC intranet application, built on .NET 6.0 with a Model-View-Controller architecture, features role-based access control, a well-structured data schema, and intuitive interfaces for efficient records management. Leveraging technologies such as ChartJS and Datatables, it excels in data visualization and user experience enhancement, showcasing advanced full-stack development skills.
                                 </li>
                                 <li>
                                     <span>Web API | To-Do List:</span> Demonstrating proficiency in full-stack development, I created a
@@ -113,10 +109,10 @@ export default function Resume() {
                         <div className='training'>
                             <h2>TECHNICAL TRAINING</h2>
                             <h3 className='mini'>
-                                Full Stack Coding Program, Centriq Training <span>Anticipated Graduation:</span>
+                                Full Stack Coding Program, Centriq Training <span>Obtained Certification:</span>
                             </h3>
                             <h3>
-                                Kansas City, MO <span>December 2023</span>
+                                Kansas City, MO <span>12/2023</span>
                             </h3>
                             <ul>
                                 <li>Troubleshooting & Debugging</li>

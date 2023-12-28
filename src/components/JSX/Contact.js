@@ -111,11 +111,7 @@ export default function Contact() {
                                             </a>
                                         </h1>
                                      
-                                        <h1 className='Border'>
-                                            <a href='https://twitter.com/AidanM16985494' target='_blank' rel='noopener noreferrer'>
-                                                Twitter / X
-                                            </a>
-                                        </h1>
+                                    
                                      
                             </div>
                         </div>

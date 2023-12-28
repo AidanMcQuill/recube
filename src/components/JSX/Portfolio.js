@@ -7,6 +7,7 @@ import Layout from './Layout'
 import BB from '../../assets/BlockBeasts.png'
 import todo from '../../assets/TODO.png'
 import AirAidan from '../../assets/AirAidans.png'
+import Atomic from '../../assets/Atomic.png'
 import SAT from '../../assets/SATapp.png'
 import Footer from './Footer'
 import ProjectModal from './ProjectModal'
@@ -53,6 +54,13 @@ export default function Portfolio() {
             description: 'This is a dynamic 2-tier MVC .NET Core application, it was a collaborative effort in pair programming which embraced agile/scrum methodologies.The MVC architecture ensures a smooth user experience, enabling effective coordination and planning. Users benefit from personalized scheduling features, security measures, and was built from the efficiency of pair programming, making it a valuable asset for optimizing SAT preparation',
             skills: 'MVC, .netCore, EF, SQL, CSS, Bootstrap, Agile, Scrum',
             projectLink: 'https://github.com/AidanMcQuill/SATsolution',
+        },
+        {
+            title: 'Atomic Synergistic',
+            image: Atomic,
+            description: 'This MVC intranet application, built on .NET 6.0 with a Model-View-Controller architecture, features role-based access control, a well-structured data schema, and intuitive interfaces for efficient records management. Leveraging technologies such as ChartJS and Datatables, it excels in data visualization and user experience enhancement, showcasing advanced full-stack development skills.',
+            skills: 'MVC, .netCore, EF, SQL, CSS, Bootstrap, Agile, Scrum, Pair Programming',
+            projectLink: 'https://github.com/AidanMcQuill/Atomic',
         },
     ]
 
