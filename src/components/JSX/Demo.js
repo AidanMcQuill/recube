@@ -49,12 +49,6 @@ export default function Demo() {
             <div className='Welcome'>
                 <h4>WELCOME USER</h4>
             </div>
-            <div className='Loading'>
-                <h4>NOW LOADING</h4>
-            </div>
-            <div className='ClickMe'>
-                <h4>CHOOSE SCREEN</h4>
-            </div>
         </>
     )
 }

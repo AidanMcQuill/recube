@@ -88,9 +88,7 @@ export default function AboutMe() {
                             <br />
 
                             <p className='Border Aboutsum'>
-                                Hello, I'm Aidan McQuillan, a Michigan-based web developer about to graduate from Centriq's Full Stack Web
-                                Development bootcamp. I've immersed myself in the .NET Core MVC framework, C#, and the art of full-stack web
-                                application design.
+                                Hello, I'm Aidan McQuillan, a creative web developer from Michigan who has successfully completed Centriq's Full Stack Web training. I proudly hold a professional certificate showcasing my proficiency.I'm also Continuously expanding my skill set, remaining dedicated to staying relevant with the latest technologies for a consistently innovative approach.
                                 <br /> <br /> What sets me apart? I'm not just a coder; I'm a creative mind passionate about transforming
                                 ideas into unique web experiences. Proficient in HTML, CSS, and JavaScript, I thrive on crafting captivating
                                 websites and innovative software applications.

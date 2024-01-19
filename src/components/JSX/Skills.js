@@ -20,6 +20,12 @@ import { DiDatabase } from 'react-icons/di'
 import { DiCode } from 'react-icons/di'
 import { FaReact } from 'react-icons/fa'
 import { SiGodotengine } from 'react-icons/si'
+import { FaDocker } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { FaUnity } from "react-icons/fa6";
+
+
+
 
 export default function Skills() {
     const navigate = useNavigate()
@@ -125,9 +131,21 @@ export default function Skills() {
                                 </a>
                             </h4>
                             <h4 className='Border'>
+                                <a href='https://www.python.org/' target='_blank' rel='noreferrer'>
+                                    Python
+                                    <FaPython />
+                                </a>
+                            </h4>
+                            <h4 className='Border'>
                                 <a href='https://getbootstrap.com/' target='_blank' rel='noreferrer'>
                                     Bootstrap
                                     <DiBootstrap />
+                                </a>
+                            </h4>
+                            <h4 className='Border'>
+                                <a href='https://www.docker.com/' target='_blank' rel='noreferrer'>
+                                    Docker
+                                    <FaDocker />
                                 </a>
                             </h4>
                         </div>
@@ -156,6 +174,12 @@ export default function Skills() {
                                 <a href='https://godotengine.org/' target='_blank' rel='noreferrer'>
                                     Godot
                                     <SiGodotengine />
+                                </a>
+                            </h4>
+                            <h4 className='Border'>
+                                <a href='https://unity.com/' target='_blank' rel='noreferrer'>
+                                    Unity
+                                    <FaUnity />
                                 </a>
                             </h4>
                         </div>
